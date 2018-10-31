@@ -31,4 +31,13 @@ public class IndividualTax extends TaxPayer {
 		}
 		return tax;
 	}
+
+	@Override
+	public String toString() {
+		return getName()
+				+ ": $ "
+				+ String.format("%.2f", tax());
+	}
+	
+	
 }
